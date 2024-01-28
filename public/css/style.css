@@ -1,0 +1,153 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.container {
+  flex: 1;
+}
+
+/* navbar */
+
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+.navbar-nav a {
+  color: #222222 !important;
+}
+/* footer */
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: space-evenly;
+  text-align: center;
+  background-color: #ebebeb;
+  height: 8rem;
+}
+.f-info-soials,
+.f-info-links,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-info-soials i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+/* cards  */
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  height: 20rem;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+.card-text {
+  color: black !important;
+}
+.card-text p {
+  font-weight: 400 !important;
+}
+.listing-link {
+  text-decoration: none;
+}
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+/* new page styling */
+.heading-new-listing {
+  margin-left: 12rem;
+}
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* show page */
+.show-img {
+  object-fit: fill !important;
+  height: 40vh !important;
+  width: 100% !important;
+}
+
+.show-page-btns {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.edit-btn {
+  margin-right: 1rem !important;
+}
+/* errors */
+
+.error {
+  color: black !important;
+}
+/* reviews style */
+#reviews-style {
+  color: black !important;
+}
+.review-author {
+  color: black !important;
+}
+#map {
+  height: 20rem;
+  width: 50vw;
+}
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.filter {
+  text-align: center;
+  margin-right: 1.5rem;
+  margin-top: 2rem;
+  opacity: 0.7;
+}
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.filter p {
+  font-size: 0.8rem;
+}
+.tax-info {
+  display: none;
+}
+.tax-toggle {
+  border: 1px solid black;
+  height: 3rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}

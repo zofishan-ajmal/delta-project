@@ -1,0 +1,73 @@
+<% layout('/layouts/boilerplate') -%>
+
+<br />
+<h3 class="heading-new-listing mt-3">Create a New Listing</h3>
+<br />
+<div class="row">
+  <div class="col-8 offset-2">
+    <form method="POST" action="/listings" class="needs-validation" novalidate enctype="multipart/form-data">
+      <div class="mb-3">
+        <lable for="title" class="form-label">Title:</lable>
+        <input
+          name="listing[title]"
+          placeholder="enter title"
+          type="text"
+          class="form-control"
+        />
+      </div>
+
+      <div class="mb-3">
+        <lable for="description" class="form-label">Description:</lable>
+        <textarea
+          name="listing[description]"
+          placeholder="enter description"
+          class="form-control"
+        ></textarea>
+      </div>
+
+      <div class="mb-3">
+        <lable for="image" class="form-label"> Upload Image</lable>
+        <input
+          name="listing[image]"
+          type="file"
+          class="form-control"
+        />
+      </div>
+
+      <div class="row" class="mb-3">
+        <div class="col-md-4 mb-3">
+          <lable for="price" class="form-label">price:</lable>
+          <input
+            name="listing[price]"
+            placeholder="1200"
+            type="number"
+            class="form-control"
+          />
+        </div>
+
+        <div class="col-md-8 mb-3">
+          <lable for="country" class="form-label">Country:</lable>
+          <input
+            name="listing[country]"
+            placeholder="enter country"
+            type="text"
+            class="form-control"
+          />
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <lable for="location" class="form-label">Location:</lable>
+        <input
+          name="listing[location]"
+          placeholder="enter location"
+          type="text"
+          class="form-control"
+        />
+      </div>
+
+      <button class="btn btn-dark add-btn mt-3">Add</button>
+      <br /><br />
+    </form>
+  </div>
+</div>
