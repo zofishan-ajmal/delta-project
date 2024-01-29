@@ -25,6 +25,10 @@ app.use(express.urlencoded({extended:true}));
 app.use(mehtodOverride("_method"));
 app.engine('ejs', ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
+// localhost server rout
+app.listen(3000 , () =>{
+    console.log("port 3000 is listening")
+});
 
 const dbURL = process.env.ATLASDB_URL;
 main() .then(() =>{
@@ -86,10 +90,6 @@ app.all("*",(req,res,next) =>{
 app.use((err,req,res,next) =>{
     let {statusCode= 500 ,message="something went wrong"} = err;
     res.status(statusCode).render("error.ejs",{message});
-});
-// localhost server rout
-app.listen(8080 , () =>{
-    console.log("port 8080 is listening")
 });
 
 
