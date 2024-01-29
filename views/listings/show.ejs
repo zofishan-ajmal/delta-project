@@ -68,9 +68,11 @@
        <p class="card-title review-author">authorized By:<b>@<%= review.author.username %></b></p>
        <p class="starability-result card-text" data-rating="<%= review.rating %>"></p>
        <p class="card-text"><%= review.comment %></p>
+    <%if(currentUser && listing.owner._id.equals(currentUser._id)){ %>
        <form method="post" action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE">
        <button class="btn btn-dark btn-sm mb-3">Delete</button>
        </form>
+     <%}%>
        </div>
        </div>             
      <% } %>
